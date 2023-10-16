@@ -6,17 +6,13 @@
 */
 
 // variables
-let randomNumber1: number
-let randomNumber2: number
+const randomNumber1: number = randint(0, 99)
+const randomNumber2: number = randint(0, 99)
 
 // setup
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 basic.pause(1000)
-
-// generate random #
-randomNumber1 = randint(0, 99)
-randomNumber2 = randint(0, 99)
 
 // show random #1
 input.onButtonPressed(Button.A, function () {
