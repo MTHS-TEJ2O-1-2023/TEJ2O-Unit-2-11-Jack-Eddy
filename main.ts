@@ -34,15 +34,15 @@ input.onButtonPressed(Button.B, function () {
 
 // compare #'s
 input.onGesture(Gesture.Shake, function () { 
-if (randomNumber1 < randomNumber2) {
-  basic.clearScreen()
-  basic.showString((randomNumber1).toString() + ' < ' + (randomNumber2).toString())
-  basic.showIcon(IconNames.Happy)
-  basic.pause(1000)
-} else {
-  basic.clearScreen()
-  basic.showString((randomNumber1).toString() + ' > ' + (randomNumber2).toString())
-  basic.showIcon(IconNames.Happy)
-  basic.pause(1000)
-}
+  if (randomNumber1 < randomNumber2) {
+    basic.clearScreen()
+    basic.showString((randomNumber1).toString() + ' < ' + (randomNumber2).toString())
+    basic.showIcon(IconNames.Happy)
+    basic.pause(1000)
+  } else {
+    basic.clearScreen()
+    basic.showString((randomNumber1).toString() + ' > ' + (randomNumber2).toString())
+    basic.showIcon(IconNames.Happy)
+    basic.pause(1000)
+  }
 })
