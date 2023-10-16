@@ -29,7 +29,7 @@ input.onButtonPressed(Button.B, function () {
 })
 
 // compare #'s
-input.onGesture(Gesture.Shake, function () { 
+input.onGesture(Gesture.Shake, function () {
   if (randomNumber1 < randomNumber2) {
     basic.clearScreen()
     basic.showString((randomNumber1).toString() + ' < ' + (randomNumber2).toString())
